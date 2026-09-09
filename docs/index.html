@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="英雄联盟主题四键互动音效面板" />
+    <title>峡谷声纹｜Summoner Signal Deck</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="soundboard-shell">
+      <div class="ambient-grid" aria-hidden="true"></div>
+      <div class="corner-mark corner-mark-left" aria-hidden="true">01—04</div>
+      <div class="corner-mark corner-mark-right" aria-hidden="true">HEX // AUDIO</div>
+
+      <section class="soundboard" aria-labelledby="page-title">
+        <header class="soundboard-header">
+          <p class="eyebrow"><span></span> SUMMONER SIGNAL DECK <span></span></p>
+          <h1 id="page-title">峡谷声纹</h1>
+          <p class="instruction">点击键帽或按下数字键 <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><kbd>4</kbd></p>
+        </header>
+
+        <div class="keyboard-frame">
+          <div class="keyboard-topline" aria-hidden="true">
+            <span>CHANNELS ARMED</span><span class="status-dot"></span>
+          </div>
+          <div class="key-grid">
+            <div>
+              <button type="button" class="sound-key sound-key-question" data-key="1" data-label="问号标记" aria-label="问号标记，快捷键 1">
+                <span class="key-rim" aria-hidden="true"></span>
+                <span class="key-face">
+                  <span class="key-number">01</span>
+                  <span class="key-icon" aria-hidden="true">
+                    <span class="line-icon question-mark">?</span>
+                    <img class="game-icon" src="./icons/1.Enemy_Missing_ping.png" alt="" />
+                  </span>
+                  <span class="key-copy"><strong>问号标记</strong><small>敌人消失</small></span>
+                  <span class="key-corner" aria-hidden="true">标记</span>
+                </span>
+              </button>
+              <audio src="./audio/1.Enemy_Missing_ping_SFX.ogg" preload="auto"></audio>
+            </div>
+
+            <div>
+              <button type="button" class="sound-key sound-key-victory" data-key="2" data-label="胜利" aria-label="胜利，快捷键 2">
+                <span class="key-rim" aria-hidden="true"></span>
+                <span class="key-face">
+                  <span class="key-number">02</span>
+                  <span class="key-icon" aria-hidden="true">
+                    <span class="line-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4Z"/><path d="M7 6H4v2a4 4 0 0 0 4 4M17 6h3v2a4 4 0 0 1-4 4"/></svg>
+                    </span>
+                    <img class="game-icon" src="./icons/2.LOL_Icon_Rendered_LARGE.png" alt="" />
+                  </span>
+                  <span class="key-copy"><strong>胜利</strong><small>宣告胜利</small></span>
+                  <span class="key-corner" aria-hidden="true">胜利</span>
+                </span>
+              </button>
+              <audio src="./audio/2.Announcer_Female1_114.ogg" preload="auto"></audio>
+            </div>
+
+            <div>
+              <button type="button" class="sound-key sound-key-hourglass" data-key="3" data-label="时间沙漏" aria-label="时间沙漏，快捷键 3">
+                <span class="key-rim" aria-hidden="true"></span>
+                <span class="key-face">
+                  <span class="key-number">03</span>
+                  <span class="key-icon" aria-hidden="true">
+                    <span class="line-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14M5 2h14M7 2v5l5 5-5 5v5M17 2v5l-5 5 5 5v5"/></svg>
+                    </span>
+                    <img class="game-icon" src="./icons/3.Zhonya's_Hourglass_item_HD.png" alt="" />
+                  </span>
+                  <span class="key-copy"><strong>时间沙漏</strong><small>金身开启</small></span>
+                  <span class="key-corner" aria-hidden="true">沙漏</span>
+                </span>
+              </button>
+              <audio src="./audio/3.Zhonya's_Hourglass_active_SFX.ogg" preload="auto"></audio>
+            </div>
+
+            <div>
+              <button type="button" class="sound-key sound-key-heartsteel" data-key="4" data-label="心之钢" aria-label="心之钢，快捷键 4">
+                <span class="key-rim" aria-hidden="true"></span>
+                <span class="key-face">
+                  <span class="key-number">04</span>
+                  <span class="key-icon" aria-hidden="true">
+                    <span class="line-icon heartsteel-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z"/></svg>
+                      <i></i>
+                    </span>
+                    <img class="game-icon" src="./icons/4.Heartsteel_item_HD.png" alt="" />
+                  </span>
+                  <span class="key-copy"><strong>心之钢</strong><small>触发叠加</small></span>
+                  <span class="key-corner" aria-hidden="true">心钢</span>
+                </span>
+              </button>
+              <audio src="./audio/4.Heartsteel_trigger_SFX.ogg" preload="auto"></audio>
+            </div>
+          </div>
+          <div class="keyboard-status" aria-live="polite">
+            <span class="status-light"></span>
+            <span class="status-text">待命 // 选择一个声纹</span>
+            <span class="status-code">SR—04</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="developer-info">
+        <button type="button" class="developer-toggle" aria-expanded="false">
+          <span>DEVELOPER INFO</span><span class="developer-cross" aria-hidden="true">+</span>
+        </button>
+        <div class="developer-reveal" aria-hidden="true">
+          <span>DESIGNED &amp; BUILT BY</span>
+          <strong>万能神药白开水R</strong>
+          <button type="button" class="icon-mode-switch" role="switch" aria-checked="false">
+            <span>原版图标</span><i class="switch-track" aria-hidden="true"><b></b></i>
+          </button>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
